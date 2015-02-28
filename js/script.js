@@ -21,29 +21,29 @@ var logistic = function(x, theta, i) {
 // The Scales:
 var thetaMap = d3.scale.linear() //name the values from 0 to 20 and make their values from .1-.7
     .domain([0, numOfLines])
-    .range([0.8, 0.06])
+    .range([0.8, 0.085])
 
 var yPos = d3.scale.linear() //scalling for creating horizontal lines
     .domain([0, numOfLines])
-    //.range([0, 4])
-    .range([-4, 4])
+    .range([0, 4])
+    //.range([-4, 4])
 
 var x = d3.scale.linear()
     .domain([0, 5])
     .range([0, width]);
 
 var y = d3.scale.linear()
-    //.domain([0, 4])
-    .domain([-5, 5])
+    .domain([0, 4])
+    //.domain([-5, 5])
     .range([height, 0]);
 
 // The line data:
 var logistic = _.map(d3.range(numOfLines), function(i) {
     var odd = true
-    if (i % 2 !== 0) {
-        odd = false
-        i = i - 1
-    }
+    // if (i % 2 !== 0) {
+    //     odd = false
+    //     i = i - 1
+    // }
     var toReturn = _.map(xs, function(num) {
         var sign = -1
         if (odd) {
