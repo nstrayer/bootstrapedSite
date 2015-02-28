@@ -1,0 +1,32 @@
+.blurred {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    -o-filter: blur(5px);
+    filter: blur(5px);
+}
+body {
+    font-family: sans-serif;
+    min-height: 2000px;
+    padding-top: 10px;
+}
+.axis path, .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.x.axis path {
+    display: none;
+}
+.y.axis path {
+    display: none;
+}
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+/*.section {
+    padding-top: 40px;
+    margin-top: 40px;
+}*/
