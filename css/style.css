@@ -61,10 +61,15 @@ tr {
 }
 
 .photos {
-    width: 15%;
-    height: 15%;
+    width: 30%;
+    height: 30%;
 }
 
 #projectsTable img {
     width: 75%;
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
 }
