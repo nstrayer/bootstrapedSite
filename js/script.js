@@ -40,10 +40,10 @@ var y = d3.scale.linear()
 // The line data:
 var logistic = _.map(d3.range(numOfLines), function(i) {
     var odd = true
-    // if (i % 2 !== 0) {
-    //     odd = false
-    //     i = i - 1
-    // }
+        // if (i % 2 !== 0) {
+        //     odd = false
+        //     i = i - 1
+        // }
     var toReturn = _.map(xs, function(num) {
         var sign = -1
         if (odd) {
@@ -95,19 +95,6 @@ var title = svg.append("text")
     .attr("y", y(2.5))
 
 
-var introMessage = "Click"
-if(isMobile){
-    introMessage = "Tap"
-    }
-
-var intro = svg.append("text")
-    .text(introMessage)
-    .attr("font-size", 45)
-    .attr("font-family", "courier")
-    .attr("text-anchor", "middle")
-    .attr("x", x(2.5))
-    .attr("y", y(2.01))
-
 // var theta = svg.append("text")
 //     .text("Theta")
 //     .attr("font-size", 45)
@@ -122,9 +109,9 @@ function change(newData) {
         .data(newData)
         .transition()
         .duration(1500)
-        // .delay(function(d, i) {
-        //     return 70 * i
-        // })
+        .delay(function(d, i) {
+            return 70 * i
+        })
         .attr("class", "line")
         .attr("d", line);
 
@@ -160,3 +147,16 @@ d3.select("svg")
     .on("click", function() {
         change(logistic)
     })
+
+var introMessage = "Click"
+if (isMobile) {
+    introMessage = "Tap"
+}
+
+var intro = svg.append("text")
+    .text(introMessage)
+    .attr("font-size", 45)
+    .attr("font-family", "courier")
+    .attr("text-anchor", "middle")
+    .attr("x", x(2.5))
+    .attr("y", y(2.01))

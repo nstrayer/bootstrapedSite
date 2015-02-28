@@ -6,8 +6,6 @@
     filter: blur(5px);
 }
 body {
-    /*font: 10px sans-serif;*/
-
     font-family: sans-serif;
     min-height: 2000px;
     padding-top: 10px;
