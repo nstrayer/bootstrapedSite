@@ -83,7 +83,7 @@ var svg = d3.select("#intro").append("svg")
     .attr("width", width)
     .attr("height", height + 2 * padding)
     .append("g")
-    .attr("transform", "translate(" + padding + "," + 0 + ")");
+    //.attr("transform", "translate(" + padding + "," + 0 + ")");
 
 var title = svg.append("text")
     .text("The Logistic Distribution")
