@@ -53,3 +53,18 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
     text-align: center;
 }
+
+tr {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 1px dotted;
+}
+
+.photos {
+    width: 15%;
+    height: 15%;
+}
+
+#projectsTable img {
+    width: 75%;
+}
