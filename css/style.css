@@ -67,11 +67,15 @@ tr {
     height: 30%;
 }
 
-#projectsTable img {
+#.projectPic{
     width: 50%;
 }
 
 img {
     max-width: 350px;
     max-height: 350px;
+}
+
+.projectTitle{
+    font-size: large;
 }
