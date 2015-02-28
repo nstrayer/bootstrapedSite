@@ -1,7 +1,7 @@
 var width = parseInt(d3.select("body").style("width").slice(0, -2)),
     height = $(window).height() - 20,
     padding = 20,
-    numOfLines = 40,
+    numOfLines = 30,
     xs = _.range(0.01, 5, .07),
     colors = ['rgb(165,0,38)', 'rgb(215,48,39)', 'rgb(244,109,67)', 'rgb(253,174,97)', 'rgb(254,224,144)',
         'rgb(224,243,248)', 'rgb(171,217,233)', 'rgb(116,173,209)', 'rgb(69,117,180)', 'rgb(49,54,149)'
