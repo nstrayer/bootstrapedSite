@@ -76,26 +76,22 @@
                 axis: "y"
             });
 
-            // $(".navbar-fixed-top").click(function(event) {
-            //     $(".navbar-collapse").collapse('hide');
-            // });
         });
 
-        $(document).on('click', '.navbar-collapse.in', function(e) {
-            if ($(e.target).is('a')) {
-                $(".navbar-collapse").collapse('hide');
-            }
-        });
+        var isMobile = /iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase());
 
-        isMobile = /iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase());
-
-        if (isMobile){
+        if (isMobile) {
             alert("Mobile!")
             $(document).on('click', '.navbar-brand', function() {
                 $(".navbar-collapse").collapse('hide');
             });
-            }
 
+            $(document).on('click', '.navbar-collapse.in', function(e) {
+                if ($(e.target).is('a')) {
+                    $(".navbar-collapse").collapse('hide');
+                }
+            });
+        }
     </script>
 
     <script src="js/script.js"></script>
