@@ -27,13 +27,15 @@ body {
     stroke: steelblue;
     stroke-width: 1.5px;
 }
+
 .section {
 	width: 90%;
 	text-align: left;
-	left: 0;
-	right: 0;
+    margin-left: auto;
+    margin-right: auto;
 	padding: 5px;
 }
+
 .pictures {
 	text-align: center
 }
