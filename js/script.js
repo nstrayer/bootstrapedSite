@@ -94,8 +94,14 @@ var title = svg.append("text")
     .attr("x", x(4.7))
     .attr("y", y(2.5))
 
+
+var introMessage = "Click"
+if(isMobile){
+    introMessage = "Tap"
+    }
+
 var intro = svg.append("text")
-    .text("Click!")
+    .text(introMessage)
     .attr("font-size", 45)
     .attr("font-family", "courier")
     .attr("text-anchor", "middle")
