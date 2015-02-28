@@ -29,7 +29,7 @@ body {
     stroke-width: 1.5px;
 }
 .section {
-    width: 90%;
+    width: 96%;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
@@ -51,13 +51,9 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
     text-align: center;
 }
-
 .photos {
     width: 30%;
     height: 30%;
-}
-#.projectPic {
-    width: 50%;
 }
 img {
     max-width: 350px;
@@ -66,7 +62,6 @@ img {
 .projectTitle {
     font-size: large;
 }
-
 .wrapper {
     clear: both;
     padding-top: 15px;
@@ -89,15 +84,13 @@ img {
         float: none;
         width: auto;
         clear: left;
-
+        margin-left:0;
+        margin-right:0;
     }
-
 }
-
 #flip {
     clear: left;
 }
-
 hr {
     clear: both;
     padding: 10px;
