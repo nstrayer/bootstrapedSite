@@ -86,7 +86,7 @@ var svg = d3.select("#intro").append("svg")
     //.attr("transform", "translate(" + padding + "," + 0 + ")");
 
 var title = svg.append("text")
-    .text("The Logistic Distribution")
+    .text("hi")
     .attr("font-size", 40)
     .attr("font-family", "courier")
     .attr("text-anchor", "end")

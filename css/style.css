@@ -6,6 +6,7 @@
     filter: blur(5px);
 }
 body {
+    /*font: 10px sans-serif;*/
     font-family: sans-serif;
     min-height: 2000px;
     padding-top: 10px;
@@ -26,7 +27,29 @@ body {
     stroke: steelblue;
     stroke-width: 1.5px;
 }
-/*.section {
-    padding-top: 40px;
-    margin-top: 40px;
-}*/
+.section {
+	width: 90%;
+	text-align: left;
+	left: 0;
+	right: 0;
+	padding: 10px;
+}
+.pictures {
+	text-align: center
+}
+
+#resumeDiv{
+    display: none;
+}
+
+.resumeSections {
+	text-align: center;
+	color: #0CBDE8;
+}
+
+#resumeButton {
+    border: 1px solid;
+    border-radius: 0.5em;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
