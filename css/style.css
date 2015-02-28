@@ -51,11 +51,7 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
     text-align: center;
 }
-tr {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-top: 1px dotted;
-}
+
 .photos {
     width: 30%;
     height: 30%;
@@ -73,9 +69,7 @@ img {
 
 .wrapper {
     clear: both;
-    /*border-bottom: 1px solid;*/
     padding-top: 15px;
-    /*text-align: center;*/
 }
 .projectPhoto {
     width: 50%;
@@ -84,7 +78,6 @@ img {
 .projectDescrip {
     width: 50%;
     float: left;
-    /*clear: right;*/
 }
 @media screen and (max-width: 400px) {
     .projectDescrip {
@@ -96,14 +89,9 @@ img {
         float: none;
         width: auto;
         clear: left;
-        margin-left: auto;
-        margin-right: auto;
 
     }
-    /*margin-right:0;
-    width:auto;
-    border:0;
-    border-bottom:2px solid #000;    */
+
 }
 
 #flip {
