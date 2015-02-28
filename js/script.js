@@ -145,12 +145,12 @@ svg.selectAll(".line")
     .style("stroke", function(d, i) {
         return colors[i % 10]
     })
-    .call(function() {
+    // .call(function() {
+    //     change(logistic)
+    // });
+
+
+d3.select("svg")
+    .on("click", function() {
         change(logistic)
-    });
-
-
-// d3.select("svg")
-//     .on("click", function() {
-//         change(logistic)
-//     })
+    })

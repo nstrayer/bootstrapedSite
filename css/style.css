@@ -65,6 +65,7 @@ img {
 .wrapper {
     clear: both;
     padding-top: 15px;
+    width: 70%;
 }
 .projectPhoto {
     width: 50%;
@@ -86,6 +87,12 @@ img {
         clear: left;
         margin-left:0;
         margin-right:0;
+    }
+
+    .wrapper {
+        clear: both;
+        padding-top: 15px;
+        width:auto;
     }
 }
 #flip {
