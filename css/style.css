@@ -66,10 +66,10 @@ tr {
 }
 
 #projectsTable img {
-    width: 75%;
+    width: 90%;
 }
 
 img {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 350px;
+    max-height: 350px;
 }
